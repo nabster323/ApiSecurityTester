@@ -1,0 +1,13 @@
+{
+  "Name": "Ensure 401 given for no session",
+  "BaseUri": "https://localhost:44358/api",
+  "OnlyHttps": true,
+  "Tests": [
+    {
+      "Verbs": [ "GET", "POST" ],
+      "ExpectedHttpResponseCode": 401,
+      "ExpectedHttpResponseContentType": "application/json",
+      "EndPoint": "/Test/Return401"
+    }
+  ]
+}
