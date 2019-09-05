@@ -1,7 +1,8 @@
 language: csharp
 solution: ApiSecurityTester.sln
+dist: bionic
 mono: none
-dotnet: 2.2
+dotnet: 2.2.6
 script:
   - cd ApiSecurityTester
   - dotnet restore
