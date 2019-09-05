@@ -39,3 +39,21 @@ I'm predicting the future a little here as at this point I don't even have a pro
 1. Get the latest release (or source if you prefer to build yourself)
 1. Configure your test(s)
 1. Make it part of your "checkin dance" and Definition of Done
+
+## Example config file (included within project):
+
+```
+{
+  "Name": "Ensure 401 given for no session",
+  "BaseUri": "https://localhost:44358/api",
+  "OnlyHttps": true,
+  "Tests": [
+    {
+      "Verbs": [ "GET", "POST" ],
+      "ExpectedHttpResponseCode": 401,
+      "ExpectedHttpResponseContentType": "application/json",
+      "EndPoint": "/Test/Return401"
+    }
+  ]
+}
+```
