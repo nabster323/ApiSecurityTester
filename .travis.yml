@@ -3,4 +3,6 @@ solution: ApiSecurityTester.sln
 mono: none
 dotnet: 2.2
 script:
- - dotnet restore
+  - cd ApiSecurityTester
+  - dotnet restore
+  - dotnet build -c Release
