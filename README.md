@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/nabster323/ApiSecurityTester.svg?branch=master)](https://travis-ci.org/nabster323/ApiSecurityTester)
+
 # ApiSecurityTester
 A tool that provides quick feedback on an API and its security level. Eventually I will enable it to be run as part of a CI pipeline.
 
